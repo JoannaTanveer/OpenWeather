@@ -52,7 +52,7 @@ $('.btn').on('click', function (event){
 
 function weatherApi (searchCity) {
     const key = '527517430ed7ab63b264a0ff97e01ae2'; 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${key}`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${key}`)
         .then(function(response) {
             return response.json();
         })
